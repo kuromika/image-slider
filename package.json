@@ -1,0 +1,21 @@
+{
+  "name": "image-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private" : "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mika-alpha/image-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mika-alpha/image-slider/issues"
+  },
+  "homepage": "https://github.com/mika-alpha/image-slider#readme"
+}
