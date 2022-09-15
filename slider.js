@@ -5,7 +5,7 @@ const slide = document.getElementsByClassName('slide')[0];
 let currentSlide = 0;
 
 function loadSlides() {
-    for (let i = 1; i <= 3; i++){
+    for (let i = 1; i <= 5; i++){
         let newImg = `/img/${i}.jpeg`;
         slides.push(newImg);
     }
