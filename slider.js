@@ -23,16 +23,29 @@ function nextSlide() {
     if (slides[currentSlide + 1] == undefined) {
         return;
     }
-    setSlide(++currentSlide);
+    currentSlide++;
+    updateCircle(currentSlide);
+    setSlide(currentSlide);
 }
 
 function previousSlide() {
     if (slides[currentSlide - 1] == undefined) {
         return;
     }
-    setSlide(--currentSlide);
+    currentSlide--;
+    updateCircle(currentSlide);
+    setSlide(currentSlide);
 }
 
+
+function updateCircle(index) {
+    let prev = document.getElementsByClassName('selected')[0];
+    if (prev != undefined) {
+        prev.classList.remove('selected');
+    }
+    let circle = document.getElementsByClassName('circle')[index];
+    circle.classList.add('selected');
+}
 
 
 export { loadSlides, setSlide, nextSlide, previousSlide, slides };

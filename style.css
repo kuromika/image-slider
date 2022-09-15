@@ -5,9 +5,12 @@
 }
 
 body{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
 .frame{
@@ -17,7 +20,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .image-slider{
@@ -28,25 +30,31 @@ body{
 
 
 .slide{
-    width: 55vw;
-    height: 80vh;   
+    width: 50vw;
+    height: 95vh;   
 }
 
 .arrow{
+    color: white;
     position: absolute;
-    background-color: white;
-    border: 1px solid black;
+    border: none;
     border-radius: 100px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #E0C3FC;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: #8EC5FC;
 }
 
 .left{
     left:0;
+    margin-left: 15px;
 }
 
 .right{
     right: 0;
+    margin-right: 15px;
 }
 
 .navigation {
@@ -57,15 +65,23 @@ body{
     left: 0;
     right: 0;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .circle{
     width: 20px;
     height: 20px;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .selected{
-    background-color: black;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.left:active,
+.right:active{
+    background-color: aliceblue;
 }
