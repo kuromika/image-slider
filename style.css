@@ -31,7 +31,7 @@ body{
 
 .slide{
     width: 80vw;
-    height: 95vh;   
+    height: 90vh;   
 }
 
 .arrow{
@@ -84,4 +84,8 @@ body{
 .left:active,
 .right:active{
     background-color: aliceblue;
+}
+
+button[type="button"]{
+    outline: none;
 }
