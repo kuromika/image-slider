@@ -30,8 +30,8 @@ body{
 
 
 .slide{
-    width: 85vw;
-    height: 90vh;   
+    width: max(1200px, 60vw);
+    height: max(600px, 60vh);
 }
 
 .arrow{
